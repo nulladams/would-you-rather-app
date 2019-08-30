@@ -8,7 +8,7 @@ import { handleLogout } from '../actions/shared'
 * @constructor
 */
 class LogBar extends Component {
-    handleLogout = () => {
+    handleClick = () => {
         this.props.dispatch(handleLogout())
     }
     render() {
