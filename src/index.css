@@ -59,3 +59,11 @@ li {
     margin: 0 auto;
     padding: 10px;
 }
+
+.logbar {
+	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	text-decoration: none;
+  	width: 300px;
+}

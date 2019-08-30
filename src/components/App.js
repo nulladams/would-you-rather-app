@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import LoadingBar from 'react-redux-loading'
 import { handleInitialData } from '../actions/shared'
 import Nav from './Nav'
-
+import LogBar from './LogBar'
 
 
 class App extends Component {
@@ -18,8 +18,10 @@ class App extends Component {
           <LoadingBar />
           <div className='navbar'>
             <Nav />
+            {this.props.logged === true && (
+              <LogBar />
+            )}
           </div>
-          teste
         </div>
       </BrowserRouter>
     )
